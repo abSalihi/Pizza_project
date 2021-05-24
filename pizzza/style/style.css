@@ -1,0 +1,21 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background: #242424;
+  background-image: url("assets/img/pizza.png");
+}
+
+/* alt + shift +  a */
+.heading h2 {
+  color: white;
+  background-image: url("assets/img/pizza.png");
+}
+
+.navbar a {
+  color: white;
+  padding: 1px 440px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

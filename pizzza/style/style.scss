@@ -1,0 +1,27 @@
+$color-1: white;
+$font-1: 'Lato', sans-serif;
+
+body {
+    font-family: $font-1;
+    font-weight: 400;
+    background: #242424;
+    background-image: url("assets/img/pizza.png");
+}
+
+/* alt + shift +  a */
+.heading {
+    h2 {
+        color: $color-1;
+        background-image: url("assets/img/pizza.png");
+    }
+}
+
+.navbar{
+    a {
+        color: $color-1;
+        padding: 1px 440px;
+        text-decoration: none;
+        font-family: $font-1;
+        font-weight: 400;
+    } 
+}
