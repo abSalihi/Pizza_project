@@ -1,9 +1,11 @@
 $color-1: white;
+$color-2: #ffba00;
 $font-1: 'Lato', sans-serif;
 
 body {
     font-family: $font-1;
     font-weight: 400;
+    background-color: #242424;
 }
 
 /* alt + shift +  a */
@@ -18,7 +20,8 @@ body {
     h2{
         font-family: $font-1;
         color: $color-1;
-        background-color: #ffba00;
+        background-color: $color-2;
+        background-size: 200;
     }
 }
 
@@ -47,4 +50,18 @@ body {
 .navbar ul li a{
     text-decoration: none;
     color: $color-1;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 30%;
+    color: $color-1;
+    background-color: $color-2;
+}
+
+.info{
+    
 }

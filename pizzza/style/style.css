@@ -1,6 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  background-color: #242424;
 }
 
 /* alt + shift +  a */
@@ -16,6 +17,7 @@ body {
   font-family: "Lato", sans-serif;
   color: white;
   background-color: #ffba00;
+  background-size: 200;
 }
 
 .navbar {
@@ -46,5 +48,15 @@ body {
 .navbar ul li a {
   text-decoration: none;
   color: white;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 30%;
+  color: white;
+  background-color: #ffba00;
 }
 /*# sourceMappingURL=style.css.map */
