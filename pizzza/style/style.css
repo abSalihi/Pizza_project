@@ -1,7 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  background-color: #242424;
 }
 
 /* alt + shift +  a */
@@ -11,13 +15,14 @@ body {
   background-image: url("assets/img/pizza.png");
   background-size: cover;
   background-position: center;
+  background-color: #2424;
 }
 
 .banner h2 {
   font-family: "Lato", sans-serif;
   color: white;
   background-color: #ffba00;
-  background-size: 200;
+  padding: 20px;
 }
 
 .navbar {
@@ -37,6 +42,7 @@ body {
 
 .logo {
   cursor: pointer;
+  font-family: "Lato", sans-serif;
 }
 
 .navbar ul li {
@@ -48,6 +54,7 @@ body {
 .navbar ul li a {
   text-decoration: none;
   color: white;
+  font-family: "Lato", sans-serif;
 }
 
 .content {
@@ -58,5 +65,117 @@ body {
   right: 30%;
   color: white;
   background-color: #ffba00;
+  padding: 20px;
+}
+
+.flexbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #242424;
+  color: white;
+  font-family: "Lato", sans-serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+}
+
+.flexbox-item-1 {
+  padding: 10px;
+  min-height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+  background: #ffba00;
+  width: 60%;
+}
+
+.flexbox-item-1 h2 {
+  color: white;
+}
+
+.flexbox-item-2 {
+  background: url(/style/assets/img/pizza2.png);
+  background-size: cover;
+  width: 40%;
+}
+
+.flexbox-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-family: "Lato", sans-serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.h2h {
+  color: #ffba00;
+  font-weight: 900;
+}
+
+.flexbox-container-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/style/assets/img/pizza3.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/style/assets/img/pizza3.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.h2menu {
+  text-align: center;
+  font-weight: 400;
+  font-size: 42px;
+  color: #ffba00;
+  font-family: "Lato", sans-serif;
+  padding-top: 20px;
+}
+
+.flexbox-item.flexbox-item-3-1 {
+  border: 3px solid white;
+  background: transparent;
+  width: 300px;
+  height: 90px;
+  margin: 10px;
+  color: #ffba00;
+  text-align: center;
+  font-weight: 500;
+}
+
+.flexbox-item.flexbox-item-3-2 {
+  background: #ffba00;
+  color: white;
+  padding: 100px;
+}
+
+.flexbox-item.flexbox-item-3-3 {
+  border: 3px solid white;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffba00;
+  font-family: "Lato", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

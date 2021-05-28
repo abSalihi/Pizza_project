@@ -1,4 +1,60 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background: #1778b9;
+  color: white;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1.heading, h2.heading, h3.heading {
+  font-size: 6rem;
+}
+
+h1.small-head, h2.small-head, h3.small-head {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+}
+
+main .icons {
+  margin-top: 1rem;
+}
+
+main a {
+  padding: 0.4rem;
+}
+
+main#home {
+  overflow: hidden;
+}
+
+main#home h1 {
+  margin-top: 20vh;
 }
 /*# sourceMappingURL=style.css.map */

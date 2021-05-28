@@ -1,11 +1,15 @@
 $color-1: white;
 $color-2: #ffba00;
+$color-3: black;
 $font-1: 'Lato', sans-serif;
 
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: $font-1;
     font-weight: 400;
-    background-color: #242424;
 }
 
 /* alt + shift +  a */
@@ -16,12 +20,13 @@ body {
     background-image: url("assets/img/pizza.png");
     background-size: cover;
     background-position: center;
+    background-color: #2424;
 
     h2{
         font-family: $font-1;
         color: $color-1;
         background-color: $color-2;
-        background-size: 200;
+        padding: 20px;
     }
 }
 
@@ -32,24 +37,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
+      
 }
 
 .logo {
     cursor: pointer;
+    font-family: $font-1;
 }
 
-.navbar ul li{
+.navbar ul li {
         list-style: none;
         display: inline-block;
         margin: 0 20px;
 }
 
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: $color-1;
+    font-family: $font-1;
 }
 
 .content {
@@ -60,8 +66,106 @@ body {
     right: 30%;
     color: $color-1;
     background-color: $color-2;
+    padding: 20px;
 }
 
-.info{
+.flexbox-container {
+    display: flex;
+    background: #242424;
+    color: $color-1;
+    font-family: $font-1;
+    justify-content: space-around;
     
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+
+}
+
+.flexbox-item-1 {
+    padding: 10px;
+    min-height: 200px;
+    align-items: center;
+    font-weight: 900;
+    background: $color-2;
+    width: 60%;
+
+    h2 {
+        color: $color-1;
+    }
+}
+
+.flexbox-item-2 {
+    background: url(/style/assets/img/pizza2.png);
+    background-size: cover;
+    width: 40%;
+}
+
+.flexbox-container-2 {
+    display: flex;
+    color: $color-3;
+    font-family: $font-1;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.h2h {
+    color: $color-2;
+    font-weight: 900;
+}
+
+.flexbox-container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/style/assets/img/pizza3.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.h2menu {
+    text-align: center;
+    font-weight: 400;
+    font-size: 42px;
+    color: #ffba00;
+    font-family: $font-1;
+    padding-top: 20px;
+}
+
+.flexbox-item  {
+    &.flexbox-item-3-1 {
+        border:3px solid $color-1;
+        background: transparent;
+        width: 300px;
+        height: 90px;
+        margin: 10px;
+        color: $color-2;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &.flexbox-item-3-2{
+        background: $color-2;
+        color: $color-1;
+        padding: 100px;
+        
+    }
+
+    &.flexbox-item-3-3{
+    border: 3px solid $color-1;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: #ffba00;
+    font-family: $font-1
+    }
 }
