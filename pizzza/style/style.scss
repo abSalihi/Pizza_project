@@ -29,10 +29,10 @@ body {
     background-color: #2424;
 
     h2 {
-    font-family: $font-1;
-    color: $color-1;
-    background-color: $color-2;
-    padding: 20px;
+        font-family: $font-1;
+        color: $color-1;
+        background-color: $color-2;
+        padding: 20px;
     }
 }
 
@@ -99,7 +99,7 @@ body {
     line-height: 2  ;
 
     h2 {
-    color: $color-1;
+        color: $color-1;
     }
 }
 
@@ -165,6 +165,7 @@ body {
     color: $color-2;
     font-family: $font-1;
     margin: 10px auto;
+    line-height: 2;
     }
 }
 
@@ -175,21 +176,21 @@ body {
     line-height: 2;
 }
 
-.aboutContent{
+.aboutContent {
     background-color: #242424;
     height: 10vh;
 }
-.abouth1{
+.abouth1 {
     color: $color-2;
     text-align: center;
 }
 
-.aboutTxt{
+.aboutTxt {
     text-align: center;
     color: $color-1;
 }
 
-.flexbox-item-4{
+.flexbox-item-4 {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
