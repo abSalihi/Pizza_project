@@ -9,6 +9,12 @@ body {
 }
 
 /* alt + shift +  a */
+.container {
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .banner {
   width: 100%;
   height: 100vh;
@@ -26,9 +32,9 @@ body {
 }
 
 .navbar {
-  width: 85%;
+  max-width: 1100px;
   margin: auto;
-  padding: 35px 0;
+  padding: 35px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +99,7 @@ body {
   font-weight: 900;
   background: #ffba00;
   width: 60%;
+  line-height: 2;
 }
 
 .flexbox-item-1 h2 {
@@ -102,6 +109,7 @@ body {
 .flexbox-item-2 {
   background: url(/style/assets/img/pizza2.png);
   background-size: cover;
+  background-repeat: no-repeat;
   width: 40%;
 }
 
@@ -111,8 +119,9 @@ body {
   display: flex;
   color: black;
   font-family: "Lato", sans-serif;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -124,18 +133,6 @@ body {
 }
 
 .flexbox-container-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/style/assets/img/pizza3.png);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/style/assets/img/pizza3.png);
   background-size: cover;
@@ -156,18 +153,10 @@ body {
 .flexbox-item.flexbox-item-3-1 {
   border: 3px solid white;
   background: transparent;
-  width: 300px;
-  height: 90px;
   margin: 10px;
   color: #ffba00;
   text-align: center;
   font-weight: 500;
-}
-
-.flexbox-item.flexbox-item-3-2 {
-  background: #ffba00;
-  color: white;
-  padding: 100px;
 }
 
 .flexbox-item.flexbox-item-3-3 {
@@ -177,5 +166,11 @@ body {
   font-weight: 400;
   color: #ffba00;
   font-family: "Lato", sans-serif;
+}
+
+.flexbox-item-3-2 {
+  background: #ffba00;
+  color: white;
+  padding: 100px 20px;
 }
 /*# sourceMappingURL=style.css.map */
