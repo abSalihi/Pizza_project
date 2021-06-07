@@ -22,6 +22,10 @@ body {
     margin: 0 auto;
 }
 
+.relative {
+    position: relative;
+}
+
 .header {
     position: absolute;
     width: 100%;
@@ -117,16 +121,14 @@ body {
 }
 
 .flexbox-item {
-    width: 200px;
+    width: 250px;
     margin: 10px;
 }
 
 .flexbox-item-1 {
     padding: 10px;
-    min-height: 200px;
     align-items: center;
     font-weight: 900;
-    background: $color-2;
     width: 60%;
     line-height: 2  ;
 
@@ -135,12 +137,18 @@ body {
     }
 }
 
-.flexbox-item-2 {
-    background: url(/style/assets/img/pizza2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40%;
+.textitem1{
+    background: $color-2;
+    padding: 10px;
+    padding-left: 40px;
 }
+
+
+.section-bg {
+    background-color: #242424;
+    padding: 110px 0;
+}
+
 
 .flexbox-container-2 {
     display: flex;
@@ -223,23 +231,40 @@ body {
 }
 
 .flexbox-item-4 {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)
-        ),
-        url(/style/assets/img/pizza4.png);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100vh;
+background: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/style/assets/img/pizza4.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
 
 .button {
     background-color: $color-2;
-    border: 3px solid $color-1;;
+    border: 3px solid $color-1;
     color: white;
     padding: 15px 32px;
     display: inline-block;
     font-size: 38px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.item1H2{
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.flexbox-item-2 {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+        max-width: 100%;
+    }
 }
