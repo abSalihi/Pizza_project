@@ -1,17 +1,22 @@
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    let addToDoButton = document.getElementById('add');
-    let list = document.getElementById('list');
-    let inputField = document.getElementById('inputField');
+    const addToDoButton = document.getElementById('add');
+    const list = document.getElementById('list');
+    const inputField = document.getElementById('inputField');
+    const form = document.getElementById('form');
 
-addToDoButton.addEventListener('click', function(){
-    var paragraph = document.createElement('p');
-    paragraph.classList.add('paragraph-styling');
-    paragraph.innerText = inputField.value;
-    list.appendChild(paragraph);
-    inputField.value = "";
-    paragraph.addEventListener('dblclick', function(){
-        list.removeChild(paragraph);
-    })
-});
-});
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const paragraph = document.createElement('li');
+        paragraph.classList.add('paragraph-styling');
+        paragraph.innerText = inputField.value;
+        parsgraps
+        if (inputField.value.length <= 0) {
+            alert('Empty input');
+        } else {
+            list.appendChild(paragraph);
+            inputField.value = '';
+        }
+        });
+    });
